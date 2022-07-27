@@ -1,9 +1,10 @@
 package main
 
+import "fmt"
+
 type Person struct {
 	Name        string
 	Age         int
-	Postcode    *int
 	Discription *string
 }
 
@@ -12,11 +13,12 @@ func main() {
 
 	p.Name = "太郎"
 	p.Age = 30
-	*p.Postcode = 0002222
-	*p.Discription = "私は日本人です"
+	p.Discription = nil
 
 	message := "私は社会人です"
 
-	*p.Discription = message
+	p.Discription = &message
 
+	fmt.Println(p)
+	fmt.Println(*p.Discription)
 }
