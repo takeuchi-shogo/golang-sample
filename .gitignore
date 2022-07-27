@@ -1,1 +1,5 @@
 SHA-256
+
+tmp/*
+
+!.gitkeep

@@ -4,12 +4,16 @@ import "fmt"
 
 func main() {
 
+	i := 0
+
 	for i := 0; i <= 10; i++ {
 		if i == 5 {
 			continue
 		}
 		fmt.Println(i)
 	}
+
+	println("i:", i)
 	// 	for i := 0; i < 2; i++ {
 	// 		test := testing()
 	// 		fmt.Println(test)
