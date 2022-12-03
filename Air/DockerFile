@@ -1,7 +1,7 @@
 # Golag
 # https://hub.docker.com/_/golang
 FROM golang:1 as golang
-RUN go get -u github.com/cosmtrek/air
+RUN go get github.com/cosmtrek/air
 
 
 # Nginx
